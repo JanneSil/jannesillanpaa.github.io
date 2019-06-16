@@ -1,141 +1,81 @@
-body {
-	background:#708090;
-}
-#wrap {
-	width:700px;
-	margin:
-	margin:0px auto 15px auto;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:12px;
-	color: #000000;
-	
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    height: 100%;
+    background-color: #25292c;
 }
 
-/* Header */
-#header {
-	height:350PX;
-	background:url("https://raw.githubusercontent.com/JanneSil/WWWProjekti/master/images/header.png") no-repeat center top;
-	clear: both;
-
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
 }
 
-#topbar {
-	heigh:78px;
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+@font-face {
+    font-family: 'titillium_webregular';
+    src: url('./fonts/titilliumweb-regular-webfont.woff2') format('woff2'), 
+        url('./fonts/titilliumweb-regular-webfont.woff') format('woff'), 
+        url('./fonts/titilliumWeb-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('./fonts/lato-regular-webfont.woff2') format('woff2'), 
+        url('./fonts/lato-regular-webfont.woff') format('woff'), 
+        url('./fonts/lato-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    font-size: 300%;
+    margin-bottom: 0;
+    color: black;
+    font-family: 'Lato', sans-serif;
 }
 
-/* Header Menu */
-#topmenu {
-	display:block;
-	list-style:none;
-	float:center-right;
-	padding:0 0px 0px 278px;
-	width: 415px;
+p {
+    font-size: 150%;
+    margin-bottom: 0;
+    color: black;
+    font-family: 'Lato', sans-serif;
 }
-#topmenu li {
-	display:inline;
-}
-#topmenu a {
-	display:block;
-	float:center;
-	height:28px;
-	margin:0px 0px 0px0px;
-	text-decoration:none;
-	padding:9px 15px 0px 15px;
-	text-align:center;
-}
-#topmenu a, #topmenu a:visited, #topmenu a:active {
-	color:#ffffff;
-}
-#topmenu a:hover{
-	color:#ffffff;
-	background-color: #B52E10;
-}
-#topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
-	color:#ffffff;
-	background-color: #B42D0F;
+p.font2 {
+    font-size: 150%;
+    margin-bottom: 0;
+    color: black;
+    font-family: 'Lato', sans-serif;
 }
 
-/*Content*/
-#content {
-	text-align:center;
+h2 {
+    font-size: 250%;
+    margin-bottom: 0;
+    color: black;
+    font-family: 'Lato', sans-serif;
 }
-#mainpage {
-	width:1500px;
-	float:center;
-	padding:5px 5px 5px 0px;
-	height:auto;
+.topnav {
+    background-color: #25292c;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 255, 255, 0.9);
 }
-#mainpage p {
-	line-height:22px;
-	margin:10px 0px 22px 0px;
-	text-align: justify;
+
+.topnav-container {
+    max-width: 75%;
+    margin: auto;
 }
-#mainpage blockquote {
-	background:#efefef;
-	display:block;
-	margin:5px;
-	font:Georgia, "Times New Roman", Times, serif;
-	font-style:italic;
-}
-h1, h2, h3, h4, h5 {
-	color:#8B008B;
-	font-weight:bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-#mainpage h1 {
-	font-size:24px;
-	color: #F2F7F;
-}
-#mainpage h2 {
-	font-size:18px;
-	padding-top: 20px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid  #B52E10;
-}
-#mainpage h3 {
-	font-size:20px;
-}
-#mainpage h4 {
-	font-size:18px;
-}
-#mainpage h5 {
-	font-size:16px;
-}
-#footer {
-	width: 1500px;
-	height:20px;
-	padding:10px;
-	color:#FFFFFF;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	text-align:center;
-	font-size:11px;
-	clear: both;
-}
-#div1, #div2 {
+
+.topnav a {
     float: left;
-    width: 150;
-    height: 150;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
-}
-
-table {
-	border-spacing: 3px;
-	
-}
-
-table, th, td {
-	border:1px #ff6347;
-	padding: 15px;
-	text-align:center;
-}
-th {
-	text-align: center;
-}
-table#t1{
-	width: 75%;
-	background-color: #ffa500;
-	border: 1px;
-	text-align:center;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 0.625em 3.125em 0.625em 0;
+    text-decoration: none;
+    font-size: 150%;
 }
