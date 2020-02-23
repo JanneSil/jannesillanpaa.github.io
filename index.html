@@ -157,7 +157,12 @@
         <div class="title"><h1>Selene</h1></div>
 		
 		<div class="tab">
-		  <button class="tablinks" onclick="openCity(event, 'New Game')">New Game</button>
+		  <button class="tablinks" onclick="openTab(event, 'New Game')">New Game</button>
+		</div>
+		
+		<div id="New Game" class="tabcontent">
+		  <h3>New Game</h3>
+		  <p>This is a new tab.</p>
 		</div>
 
         <div class="description">
@@ -246,6 +251,22 @@
             <iframe width="740" height="480" src="https://www.youtube.com/embed/kXqgxyXyX3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
         </div>
+		
+		<script>
+		function openTab(evt, cityName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		</script>
 
 
 
