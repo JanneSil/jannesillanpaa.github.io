@@ -212,50 +212,58 @@
 	</div>
 	
 	    <div class="tankgame">
+		
         <div class="title"><h1>Personal AI Projects</h1></div>
         <div class="description" style="margin-bottom: 6.25em">
             <p>
 				These are some of the projects I have done on my free time.
             </p>
 			<br/>
-			
-		<div class="title"><h1>Enemy AI Showcase</h1></div>
-		<div class="description">
-            <p>
-			<font color="red">Unity: C#</font> <br />
-				Enemy AI that I made for showcase. It features stack based finite state machine at its core.<br /> 
-				<br /> 
-				<b>Features</b>: FOV, attacking, pursuing enemy, flanking enemy, supporting allies, search for enemy, dynamic roles and groups<br />
-				<br /> 
-				<b>Enemy Group</b>: The enemy belongs in a group of enemies that are in close proximity to each other. Enemies in a group are able to communicate with each other.<br />
-				<br /> 
-				<b>Enemy Roles</b>: Attackers, Flankers and Supports. <b>The Master AI Controller</b> assigns roles dynamically during runtime. <br/>
-				<br />
-				<b>Code Examples</b>: <br />
-				<a href="https://github.com/JanneSil/jannesillanpaa.github.io/raw/master/MasterAIControllerClass.pdf">MasterAIController class</a> <br />
-				<a href="https://github.com/JanneSil/jannesillanpaa.github.io/raw/master/EnemyAIClass.pdf">EnemyAI class</a> <br />
-				<br />
-            </p>
-        </div>
-        <div class="video">
-			<iframe width="740" height="480" src="https://www.youtube.com/embed/XRgkeydHoOk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<div class="tab">
+		  <button class="tablinks" onclick="openTab(event, 'Enemy AI Showcase')">Enemy AI Showcase"</button>
+		  <button class="tablinks" onclick="openTab(event, 'AI Showcase')">AI Showcase</button>
+		</div>
+		
+		<div id="Enemy AI Showcase" class="tabcontent">
+			<div class="title"><h1>Enemy AI Showcase</h1></div>
+			<div class="description">
+				<p>
+				<font color="red">Unity: C#</font> <br />
+					Enemy AI that I made for showcase. It features stack based finite state machine at its core.<br /> 
+					<br /> 
+					<b>Features</b>: FOV, attacking, pursuing enemy, flanking enemy, supporting allies, search for enemy, dynamic roles and groups<br />
+					<br /> 
+					<b>Enemy Group</b>: The enemy belongs in a group of enemies that are in close proximity to each other. Enemies in a group are able to communicate with each other.<br />
+					<br /> 
+					<b>Enemy Roles</b>: Attackers, Flankers and Supports. <b>The Master AI Controller</b> assigns roles dynamically during runtime. <br/>
+					<br />
+					<b>Code Examples</b>: <br />
+					<a href="https://github.com/JanneSil/jannesillanpaa.github.io/raw/master/MasterAIControllerClass.pdf">MasterAIController class</a> <br />
+					<a href="https://github.com/JanneSil/jannesillanpaa.github.io/raw/master/EnemyAIClass.pdf">EnemyAI class</a> <br />
+					<br />
+				</p>
+			</div>
+			<div class="video">
+				<iframe width="740" height="480" src="https://www.youtube.com/embed/XRgkeydHoOk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+		
+		<div id="AI Showcase" class="tabcontent">
+			<div class="title"><h1>AI Showcase</h1></div>
+			<div class="description">
+				<p>
+				<font color="red">Unity: C#</font> <br />
+					Here are some things I have done:<br /> <br />
+					<b>Goal-Oriented Action Planning:</b> It uses Unity NavMesh, A* & FSM<br />
+					<b>A* Algorithm:</b> Made with C# for an AI course. I have also done A* in C++<br />
+					<b>Flocking technique</b> <br />
+				</p>
+			</div>
+			<div class="video">
+				<iframe width="740" height="480" src="https://www.youtube.com/embed/kXqgxyXyX3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
 
-        </div>
-			
-		<div class="title"><h1>AI Showcase</h1></div>
-		<div class="description">
-            <p>
-			<font color="red">Unity: C#</font> <br />
-				Here are some things I have done:<br /> <br />
-				<b>Goal-Oriented Action Planning:</b> It uses Unity NavMesh, A* & FSM<br />
-				<b>A* Algorithm:</b> Made with C# for an AI course. I have also done A* in C++<br />
-				<b>Flocking technique</b> <br />
-            </p>
-        </div>
-        <div class="video">
-            <iframe width="740" height="480" src="https://www.youtube.com/embed/kXqgxyXyX3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-        </div>
 		
 		<script>
 		function openTab(evt, cityName) {
